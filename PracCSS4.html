@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro de Mascotas</title>
+  <style>
+    form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #2802ff;
+      background-color: #999999;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      background-color: #0da39c;
+      color: #000000;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de los mejores lugares para visitar</h1>
+  <form>
+    <label for="nombre">Nombre de del lugar:</label>
+    <input type="text" id="nombre" name="nombre">
+    
+    <label for="tipo">Tipo de lugar:</label>
+    <select id="tipo" name="tipo">
+      <option value="Naturaleza">Natural</option>
+      <option value="Ciudad">Ciudad</option>
+    </select>
+    
+    <label for="vacunado">¿Te gusta el lugar?</label>
+    <input type="checkbox" id="lugar" name="lugar"> Sí
+    
+    <label>Tipo de lugar turistico</label>
+    <input type="radio" id="Cultural" name="lugar" value="Cultural"> Cultural
+    <input type="radio" id="Diversion" name="lugar" value="Diversion"> Diversion
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

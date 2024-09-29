@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Lugares para Visitar</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #118ac2;
+            background-color: #ac90ee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subir Información del Lugar que Quieres Visitar</h1>
+    <form action="datos.html" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre del Lugar:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="ubicacion">Ubicación del Lugar:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required><br><br>
+
+        <label for="imagen">Subir Imagen del Lugar:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
